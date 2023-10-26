@@ -120,18 +120,30 @@ r2.add_route("DEFAULT", etr2a)
 # Set up an Experiment. This API takes the name of the experiment as a string.
 exp = Experiment("dumbbell-topology")
 
-# Configure two flows from `h1` to `h3` and two more flows from `h2` to `h4`.
+# Configure upload from `h1` to `h3` and from `h2` to `h4`.
 flow1 = Flow(h1, h3, eth3.get_address(), 0, 200, 1)
-flow2 = Flow(h3, h1, eth3.get_address(), 0, 200, 1)
+flow2 = Flow(h1, h3, eth3.get_address(), 0, 200, 1)
 flow3 = Flow(h2, h4, eth4.get_address(), 0, 200, 1)
-flow4 = Flow(h4, h2, eth4.get_address(), 0, 200, 1)
+flow4 = Flow(h2, h4, eth4.get_address(), 0, 200, 1)
+
+# Configure download from `h3` to `h1` and from `h4` to `h2`.
+flow5 = Flow(h3, h1, eth3.get_address(), 0, 200, 1)
+flow6 = Flow(h3, h1, eth3.get_address(), 0, 200, 1)
+flow7 = Flow(h4, h2, eth4.get_address(), 0, 200, 1)
+flow8 = Flow(h4, h2, eth4.get_address(), 0, 200, 1)
 
 # Use `flow1` as a tcp1 and 'flow2' as tcp2 flow
 # Use `flow3` as a tcp1 and 'flow4' as tcp2 flow
+# Use `flow5` as a tcp1 and 'flow6' as tcp2 flow
+# Use `flow7` as a tcp1 and 'flow8' as tcp2 flow
 exp.add_tcp_flow(flow1, args.tcp1)
 exp.add_tcp_flow(flow2, args.tcp2)
 exp.add_tcp_flow(flow3, args.tcp1)
 exp.add_tcp_flow(flow4, args.tcp2)
+exp.add_tcp_flow(flow5, args.tcp1)
+exp.add_tcp_flow(flow6, args.tcp2)
+exp.add_tcp_flow(flow7, args.tcp1)
+exp.add_tcp_flow(flow8, args.tcp2)
 
 
 # Run the experiment
