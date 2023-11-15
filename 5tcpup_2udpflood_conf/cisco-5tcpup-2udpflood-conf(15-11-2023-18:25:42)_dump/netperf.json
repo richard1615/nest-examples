@@ -1,0 +1,178 @@
+{
+    "h1": [
+        {
+            "192.168.3.2:46157, cubic": [
+                {
+                    "meta": true,
+                    "start_time": "0",
+                    "stop_time": "200",
+                    "destination_node": "h2"
+                },
+                {
+                    "timestamp": "1700052943.190",
+                    "sending_rate": "5.68"
+                },
+                {
+                    "timestamp": "1700052943.615",
+                    "sending_rate": "4.93"
+                },
+                {
+                    "timestamp": "1700052944.151",
+                    "sending_rate": "2.20"
+                },
+                {
+                    "timestamp": "1700052945.187",
+                    "sending_rate": "1.52"
+                },
+                {
+                    "timestamp": "1700052950.614",
+                    "sending_rate": "0.29"
+                },
+                {
+                    "timestamp": "1700052966.459",
+                    "sending_rate": "0.10"
+                }
+            ]
+        },
+        {
+            "192.168.4.2:39655, cubic": [
+                {
+                    "meta": true,
+                    "start_time": "0",
+                    "stop_time": "200",
+                    "destination_node": "h3"
+                },
+                {
+                    "timestamp": "1700052943.406",
+                    "sending_rate": "2.01"
+                },
+                {
+                    "timestamp": "1700052943.648",
+                    "sending_rate": "2.16"
+                },
+                {
+                    "timestamp": "1700052943.884",
+                    "sending_rate": "3.90"
+                },
+                {
+                    "timestamp": "1700052944.289",
+                    "sending_rate": "3.56"
+                },
+                {
+                    "timestamp": "1700052945.552",
+                    "sending_rate": "0.93"
+                },
+                {
+                    "timestamp": "1700052955.261",
+                    "sending_rate": "0.16"
+                },
+                {
+                    "timestamp": "1700052970.116",
+                    "sending_rate": "0.11"
+                },
+                {
+                    "timestamp": "1700053081.477",
+                    "sending_rate": "0.01"
+                }
+            ]
+        },
+        {
+            "192.168.5.2:34201, cubic": [
+                {
+                    "meta": true,
+                    "start_time": "0",
+                    "stop_time": "200",
+                    "destination_node": "h4"
+                },
+                {
+                    "timestamp": "1700052943.317",
+                    "sending_rate": "9.69"
+                },
+                {
+                    "timestamp": "1700052943.779",
+                    "sending_rate": "2.56"
+                },
+                {
+                    "timestamp": "1700052944.450",
+                    "sending_rate": "2.34"
+                },
+                {
+                    "timestamp": "1700052946.146",
+                    "sending_rate": "0.93"
+                },
+                {
+                    "timestamp": "1700052958.342",
+                    "sending_rate": "0.17"
+                }
+            ]
+        },
+        {
+            "192.168.6.2:38965, cubic": [
+                {
+                    "meta": true,
+                    "start_time": "0",
+                    "stop_time": "200",
+                    "destination_node": "h5"
+                },
+                {
+                    "timestamp": "1700052943.273",
+                    "sending_rate": "4.44"
+                },
+                {
+                    "timestamp": "1700052943.707",
+                    "sending_rate": "3.93"
+                },
+                {
+                    "timestamp": "1700052944.066",
+                    "sending_rate": "3.28"
+                },
+                {
+                    "timestamp": "1700052945.838",
+                    "sending_rate": "0.89"
+                },
+                {
+                    "timestamp": "1700052955.463",
+                    "sending_rate": "0.16"
+                }
+            ]
+        },
+        {
+            "192.168.7.2:35509, cubic": [
+                {
+                    "meta": true,
+                    "start_time": "0",
+                    "stop_time": "200",
+                    "destination_node": "h6"
+                },
+                {
+                    "timestamp": "1700052943.427",
+                    "sending_rate": "1.91"
+                },
+                {
+                    "timestamp": "1700052943.682",
+                    "sending_rate": "2.05"
+                },
+                {
+                    "timestamp": "1700052943.944",
+                    "sending_rate": "3.51"
+                },
+                {
+                    "timestamp": "1700052944.360",
+                    "sending_rate": "3.46"
+                },
+                {
+                    "timestamp": "1700052945.776",
+                    "sending_rate": "0.83"
+                },
+                {
+                    "timestamp": "1700052953.716",
+                    "sending_rate": "0.20"
+                },
+                {
+                    "timestamp": "1700053040.059",
+                    "sending_rate": "0.02"
+                }
+            ]
+        }
+    ]
+}
