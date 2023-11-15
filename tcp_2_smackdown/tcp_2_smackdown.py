@@ -45,7 +45,7 @@ args = parser.parse_args()
 ##############################################################################
 
 # This program runs for 200 seconds and creates a new directory called
-# `dumbbell-topology(date-timestamp)_dump`. It contains a `README` that
+# `TCP 2 smackdown(date-timestamp)_dump`. It contains a `README` that
 # provides details about the sub-directories and files within this directory.
 # See the plots in `netperf`, `ping` and `ss` sub-directories for this program.
 
@@ -118,7 +118,7 @@ r1.add_route("DEFAULT", etr1c)
 r2.add_route("DEFAULT", etr2a)
 
 # Set up an Experiment. This API takes the name of the experiment as a string.
-exp = Experiment("dumbbell-topology")
+exp = Experiment("TCP 2 smackdown")
 
 # Configure upload from `h1` to `h3` and from `h2` to `h4`.
 flow1 = Flow(h1, h3, eth3.get_address(), 0, 200, 1)
