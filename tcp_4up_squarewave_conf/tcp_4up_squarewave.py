@@ -101,7 +101,7 @@ r1.add_route("DEFAULT", etr1c)
 r2.add_route("DEFAULT", etr2a)
 
 # Set up an Experiment. This API takes the name of the experiment as a string.
-exp = Experiment("TCP 2 up Delay")
+exp = Experiment("TCP 4 up squarewave")
 
 # Configure upload from `h1` to `h3` and from `h2` to `h4`.
 flow1 = Flow(h1, h3, eth3.get_address(), 0, length, 1)
