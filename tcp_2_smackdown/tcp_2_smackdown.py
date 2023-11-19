@@ -1,5 +1,5 @@
 # SPDX-License-Identifier: GPL-2.0-only
-# Copyright (c) 2019-2022 NITK Surathkal
+# Copyright (c) 2019-2023 NITK Surathkal
 
 ########################
 # SHOULD BE RUN AS ROOT
@@ -127,10 +127,10 @@ flow3 = Flow(h2, h4, eth4.get_address(), 0, 200, 1)
 flow4 = Flow(h2, h4, eth4.get_address(), 0, 200, 1)
 
 # Configure download from `h3` to `h1` and from `h4` to `h2`.
-flow5 = Flow(h3, h1, eth3.get_address(), 0, 200, 1)
-flow6 = Flow(h3, h1, eth3.get_address(), 0, 200, 1)
-flow7 = Flow(h4, h2, eth4.get_address(), 0, 200, 1)
-flow8 = Flow(h4, h2, eth4.get_address(), 0, 200, 1)
+flow5 = Flow(h3, h1, eth1.get_address(), 0, 200, 1)
+flow6 = Flow(h3, h1, eth1.get_address(), 0, 200, 1)
+flow7 = Flow(h4, h2, eth2.get_address(), 0, 200, 1)
+flow8 = Flow(h4, h2, eth2.get_address(), 0, 200, 1)
 
 # Use `flow1` as a tcp1 and 'flow2' as tcp2 flow
 # Use `flow3` as a tcp1 and 'flow4' as tcp2 flow
