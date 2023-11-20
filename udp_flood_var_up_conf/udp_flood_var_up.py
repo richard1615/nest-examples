@@ -15,7 +15,8 @@ parser = argparse.ArgumentParser()
 
 # Add an argument
 parser.add_argument('--tcp', type=str, default="cubic", help = "TCP algorithm to use")
-parser.add_argument('--streams', type=int, default=2, help = "Number of TCP upload streams")
+parser.add_argument('--tcp_streams', type=int, default=2, help = "Number of TCP upload streams")
+parser.add_argument('--udp_streams', type=int, default=1, help = "Number of UDP upload streams")
 
 # Parse the argument
 args = parser.parse_args()
@@ -123,8 +124,8 @@ exp = Experiment("udp_flood_var_up_conf")
 # Configure two flows from `h1` to `h3` and two more flows from `h2` to `h4`.
 
 # upload flows
-flow1 = Flow(h1, h3, eth3.get_address(), 0, 200, args.streams)
-flow2 = Flow(h2, h4, eth4.get_address(), 0, 200, 1)
+flow1 = Flow(h1, h3, eth3.get_address(), 0, 200, args.tcp_streams)
+flow2 = Flow(h2, h4, eth4.get_address(), 0, 200, args.udp_streams)
 
 
 # using flow 1 as tcp flow and flow2 as udp flow
